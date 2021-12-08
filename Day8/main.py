@@ -1,5 +1,5 @@
 counts = 0
-file_name = 'iput.txt'
+file_name = 'input.txt'
 with open(file_name, "r") as fd:
     for line in fd:
         wires = line.strip().split('|')[0].strip().split(' ')
@@ -63,4 +63,4 @@ with open(file_name, "r") as fd:
             total = total*10 + decoding_map_reversed[digit]
         result += total
         
-print("Result part A:", result)
+print("Result part B:", result)
