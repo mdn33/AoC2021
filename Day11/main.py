@@ -53,8 +53,8 @@ def clean(grid):
                 grid[row,column] = 0
     return grid
 
-grid = np.array(read_input('iput.txt'))
-step = 400
+grid = np.array(read_input('input.txt'))
+step = 100
 number_of_flashes = 0
 all_flashed_step = -1
 for i in range(step):
@@ -69,4 +69,4 @@ for i in range(step):
         all_flashed_step = 1 + i
         
 print('answer part A:', number_of_flashes)
-print('answer part B', all_flashed_step)
+print('answer part B:', all_flashed_step)
